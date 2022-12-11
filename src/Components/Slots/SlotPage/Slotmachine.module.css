@@ -1,0 +1,40 @@
+.slotMachine{
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:.5rem 0;
+}
+.slots{
+    display: flex;
+}
+.saldo{
+    margin: 1rem 0;
+}
+.btn{
+    width: 60px;
+    border: black solid 2px;
+    border-radius: 10px;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.text{
+    margin: 1rem 0;
+    background: linear-gradient(90deg,red,yellow,pink,blue,pink,red);
+    font-size: 3rem;
+    font-weight: bolder;
+    background-size: 400%;
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: myMove 10s linear infinite ;
+}
+@keyframes myMove{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+
+}

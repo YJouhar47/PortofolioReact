@@ -1,0 +1,37 @@
+.container{
+    width: 50%;
+}
+.fields{
+    margin-bottom: .5rem;
+}
+.field{
+    display: flex;
+    margin: .5rem 0;
+}
+.field input{
+    flex: 1;
+}
+.field label{
+    min-width: 80px;
+}
+
+
+.table,.table td,.table th {
+    border: 1px solid lightgray;
+}
+.table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.table th,.table td{
+    padding: 1rem;
+    text-align: center;
+
+}
+.table tr th:first-child,.table tr td:first-child {
+ 
+    min-width: 200px;
+}
+.table tr:nth-child(even),.thead{
+    background-color:#f2f2f2;
+}

@@ -1,0 +1,21 @@
+import { TodoItem } from "../types";
+import TodoListItem from "./TodoListItem";
+
+interface TodoListProps {
+    todos: TodoItem[];
+    markCompleted: (index: number, completed: boolean) => void
+  }
+
+  const TodoList = ({ todos, markCompleted }: TodoListProps) => {
+    return (
+      <div>
+        <div>
+          {todos.map((todo, index) => (
+                      
+            <TodoListItem todo={todo} markCompleted={(completed:boolean)=>markCompleted(index, completed)}></TodoListItem>        
+          ))}
+        </div>
+      </div>
+    )
+  }
+  export default TodoList;
