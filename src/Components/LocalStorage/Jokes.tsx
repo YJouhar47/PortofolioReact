@@ -32,7 +32,6 @@ const Jokes = () => {
 
     return (
         <div>
-            <Navbar></Navbar>
             <h3>Choose a joke</h3>
             <div className={styles.card}>
                 <b>Random joke :</b>

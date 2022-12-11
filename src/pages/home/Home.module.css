@@ -1,14 +1,6 @@
 .contentwrapper {
 
-   height: 97.5%;
-}
-h1{
-    color: white;
-}
-body{
-    position:absolute;
-    top:0px;
-    right:0px;
-    bottom:0px;
-    left:0px;
+   height: 100%;
+   color: white;
+   text-align: center;
 }

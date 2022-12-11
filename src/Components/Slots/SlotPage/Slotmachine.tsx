@@ -29,7 +29,6 @@ const SlotMachine = ({aantalSlots}:{aantalSlots:number}) => {
     }
     return (
         < >
-            <Navbar></Navbar>
             <div className={styles.slotMachine}>
                 <p className={styles.saldo}>Saldo: &euro;{money}</p>
                 <div className={styles.slots}>

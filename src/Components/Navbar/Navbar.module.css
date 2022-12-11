@@ -1,12 +1,7 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
   .topnav {
-    overflow: hidden;
     background-color: black;
     border-bottom: 1px solid white;
+    height: 3.3rem;
   }
   
   .topnav a {
@@ -24,7 +19,3 @@ body {
     text-decoration: underline;
   }
   
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }

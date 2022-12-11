@@ -9,7 +9,6 @@ const IntervalPage = () => {
   const [max, setMax] = useState(0);
   return (
       <>
-      <Navbar></Navbar>
       <h3>Timer : </h3>
       <Timer></Timer>
       <CurrentTime></CurrentTime>

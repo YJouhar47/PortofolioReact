@@ -14,7 +14,6 @@ const ColorPicker = () =>
     }
     return (
         <div>
-            <Navbar></Navbar>
             <h3>Choose your color :</h3>
             <input type="color" id="color" onChange={handleChangeInput} value={color}></input>
             <br></br>

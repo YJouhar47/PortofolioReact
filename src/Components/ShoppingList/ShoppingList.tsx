@@ -35,7 +35,6 @@ const ListShopping = () => {
   }
     return (
       <div>
-      <Navbar></Navbar>
         <div className={styles.container}>
           
           <div className={styles.fields}>

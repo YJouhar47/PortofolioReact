@@ -41,7 +41,6 @@ const QuizApp = () =>
     }
     return (
         <div>
-            <Navbar></Navbar>
             <Question questions={questions} answers={answers} onAnswersChange={answersHandler}/>
             <button onClick={clickHandle}>Load more</button>
         </div>

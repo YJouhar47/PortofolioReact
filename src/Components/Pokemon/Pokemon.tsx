@@ -29,7 +29,6 @@ const Pokedex = ({limit =151}:{limit?:number}) => {
     }
   return (
     <>
-    <Navbar></Navbar>
     <input type="text" value={filterField} onChange={changeInputHandler}/> <br />
     {(pokemons == null || pokemons == undefined || pokemons.length == 0) && <img className={styles.img} src="https://media.giphy.com/media/jAYUbVXgESSti/giphy.gif"/>}
     <ul>

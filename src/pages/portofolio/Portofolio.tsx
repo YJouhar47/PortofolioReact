@@ -14,7 +14,6 @@ const Portofolio = () => {
     ]
     return (
         <div>
-            <Navbar></Navbar>
             <div className={styles.cardswrapper}>
                 {cards.map((e) =>
                     <Cards key={e.title} title={e.title} link={e.link} image={e.image} />

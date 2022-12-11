@@ -19,7 +19,6 @@ const TodoListPage = () => {
 
   return (
     <div>
-      <Navbar></Navbar>
       <ToDoInput addTodo={addTodo}></ToDoInput>
       <TodoList todos={todos} markCompleted={markCompleted} />
     </div>
