@@ -5,24 +5,19 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Aboutme from './pages/Aboutme/Aboutme';
 import Contact from './pages/contact/Contact';
-import QuizApp from './Components/Quizapp/QuizPage/QuizApp';
+import QuizApp from './pages/QuizPage/QuizApp';
 import Portofolio from './pages/portofolio/Portofolio';
 import Pokedex from './Components/Pokemon/Pokemon';
 import ShoppingList from './Components/ShoppingList/ShoppingList';
-import IntervalPage from './Components/Interval/IntervalPage';
-import TodoListPage from './Components/TodoList/TodolistPage/TodoListPage';
-import SlotMachine from './Components/Slots/SlotPage/Slotmachine';
+import IntervalPage from './pages/Interval/IntervalPage';
+import TodoListPage from './pages/TodolistPage/TodoListPage';
+import SlotMachine from './pages/SlotPage/Slotmachine';
 import Jokes from './Components/LocalStorage/Jokes';
 import ColorPicker from './Components/ColorPicker/ColorPicker';
 import Home from './pages/home/Home';
 const App = () => {
   return (
-    <div>
       <Router>
-        <header>
-        <Navbar></Navbar>
-        </header>
-        <body>
           <Routes>
             <Route path='/' element={<Home></Home>} />
             <Route path='/aboutme' element={<Aboutme></Aboutme>}/>
@@ -37,12 +32,7 @@ const App = () => {
             <Route path='/jokes' element={<Jokes/>}/>
             <Route path='/colorpicker' element={<ColorPicker/>}/>
           </Routes>
-        </body>
-        <footer>
-          <Footer></Footer>
-        </footer>
       </Router>
-    </div>
 
   );
 }

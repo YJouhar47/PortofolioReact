@@ -8,14 +8,12 @@ interface Cards {
 const Cards = ({title,link,image}:Cards) => {
     const navigate = useNavigate()
     return (
-        <div   onClick={()=> navigate(`/${link}`)}>
-            <div className={styles.polaroid}>
+            <div className={styles.polaroid} onClick={()=> navigate(`/${link}`)}>
             <img src={image}></img>
             <div className={styles.container}>
             <p>{title}</p>
             </div>
             </div>
-        </div>
     )
 }
 export default Cards;

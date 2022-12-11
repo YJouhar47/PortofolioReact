@@ -1,7 +1,7 @@
 import styles from "./Slotmachine.module.css";
 import { MouseEventHandler, useState } from "react";
-import Slot from "../component/Slot";
-import Navbar from "../../Navbar/Navbar";
+import Slot from "../../Components/Slots/Slot";
+import Layout from "../../Components/Layout/Layout";
 
 const SlotMachine = ({aantalSlots}:{aantalSlots:number}) => {
     const [money, setMoney] = useState<number>(100);
@@ -28,7 +28,9 @@ const SlotMachine = ({aantalSlots}:{aantalSlots:number}) => {
         }
     }
     return (
+        <Layout>
         < >
+            <h2>Slots :</h2>
             <div className={styles.slotMachine}>
                 <p className={styles.saldo}>Saldo: &euro;{money}</p>
                 <div className={styles.slots}>
@@ -38,6 +40,7 @@ const SlotMachine = ({aantalSlots}:{aantalSlots:number}) => {
                 {money == 0 && <p className={styles.text}>Je bent bankroept!</p>}
             </div>
         </>
+        </Layout>
     );
 }
 export default SlotMachine;

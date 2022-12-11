@@ -1,7 +1,9 @@
 div.polaroid {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
-}
+    min-width: 250px;
+    min-height: 330px;
+  }
   
   div.container {
     text-align: center;

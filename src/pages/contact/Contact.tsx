@@ -2,6 +2,7 @@ import React, { FormEventHandler, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Navbar from '../../Components/Navbar/Navbar';
 import styles from './Contact.module.css'
+import Layout from '../../Components/Layout/Layout';
 const ContactUs = () => {
   const[fname,setfName] = useState("");
   const[email,setEmail] = useState("");
@@ -33,6 +34,7 @@ const ContactUs = () => {
   };
 
   return (
+    <Layout>
     <div>
       <h2 style={{marginTop:'5rem', textAlign:'center'}}>Contact us anytime</h2>
       <h2 style={{marginTop:'5rem', textAlign:'center'}}>{(confirmationText !== "" && confirmationText !==null) && <p>{confirmationText}</p>}</h2>
@@ -59,6 +61,7 @@ const ContactUs = () => {
         
       </div>
     </div>
+    </Layout>
   );
 };
 export default ContactUs;

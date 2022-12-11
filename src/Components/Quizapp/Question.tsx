@@ -1,7 +1,7 @@
 
 import MultipleChoiceQuestion from "./MultipleChoiceQuestion";
 import { decode } from "html-entities";
-import { question } from "../QuizPage/QuizApp";
+import { question } from "../../pages/QuizPage/QuizApp";
 import TrueOfFalseQuestion from "./TrueOfFalseQuestion";
 
 interface IQuestion {
