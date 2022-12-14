@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import Layout from "../../Components/Layout/Layout";
-import Navbar from "../../Components/Navbar/Navbar";
-import ToDoInput from "../../Components/TodoList/TodoInput";
-import TodoList from "../../Components/TodoList/TodoList";
-import { TodoItem } from "../../Components/TodoList/types";
+import ToDoInput from "../TodoInput";
+import TodoList from "../TodoList";
+import { TodoItem } from "../types";
 
 
 
@@ -19,13 +17,11 @@ const TodoListPage = () => {
   };
 
   return (
-    <Layout>
     <div> 
       <h2>Todo list :</h2>
       <ToDoInput addTodo={addTodo}></ToDoInput>
       <TodoList todos={todos} markCompleted={markCompleted} />
     </div>
-    </Layout>
   );
 
 }

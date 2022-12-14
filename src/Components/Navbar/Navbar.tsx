@@ -6,7 +6,6 @@ const Navbar = () => {
             <div className={styles.topnav}>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/portofolio">Portofolio</NavLink>
-                <NavLink to="/aboutme">About me</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
             </div>
     )

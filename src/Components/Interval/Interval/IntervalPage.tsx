@@ -1,15 +1,13 @@
 import React, { useState } from 'react'; 
-import Navbar from '../../Components/Navbar/Navbar';
-import CurrentTime from '../../Components/Interval/CurrentTime';
-import RandomValue from '../../Components/Interval/RandomValue';
-import Timer from '../../Components/Interval/Timer';
-import Layout from '../../Components/Layout/Layout';
+import CurrentTime from '../CurrentTime';
+import RandomValue from '../RandomValue';
+import Timer from '../Timer';
 
 const IntervalPage = () => {
   const [min, setMin] = useState(0);
   const [max, setMax] = useState(0);
   return (
-      <Layout>
+      <div>
       <h3>Timer : </h3>
       <Timer></Timer>
       <CurrentTime></CurrentTime>
@@ -19,7 +17,7 @@ const IntervalPage = () => {
       <input type="number" onChange={(e) => setMax(parseInt(e.target.value))} value={max} />
       
       <RandomValue min={min} max={max}/>
-      </Layout>
+      </div>
   );
 }
 

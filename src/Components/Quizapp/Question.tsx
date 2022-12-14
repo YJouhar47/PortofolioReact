@@ -1,7 +1,7 @@
 
 import MultipleChoiceQuestion from "./MultipleChoiceQuestion";
 import { decode } from "html-entities";
-import { question } from "../../pages/QuizPage/QuizApp";
+import { question } from "./QuizPage/QuizApp";
 import TrueOfFalseQuestion from "./TrueOfFalseQuestion";
 
 interface IQuestion {
@@ -30,7 +30,7 @@ const Question = ({questions,answers,onAnswersChange}:IQuestion) =>
     return (
         <div>
             {questions.map((question,index) => question.type === "multiple" ? 
-                (answers[index] == "" ||  answers[index] == null ? <MultipleChoiceQuestion question={question} onAnswer={answerHandler} index={index}/>:
+                (answers[index] === "" ||  answers[index] == null ? <MultipleChoiceQuestion question={question} onAnswer={answerHandler} index={index}/>:
                 (answers[index] === questions[index].correct_answer? 
                     <div style={{backgroundColor:"green"}}>
                         <p>{decode(question.question)}</p>
@@ -41,7 +41,7 @@ const Question = ({questions,answers,onAnswersChange}:IQuestion) =>
                         <p style={{fontWeight:"bold"}}>You answered {decode(answers[index])}, but the correct answer was {decode(questions[index].correct_answer)}</p>
                     </div>))
             :
-                (answers[index] == "" ||  answers[index] == null ? <TrueOfFalseQuestion question={question} onAnswer={answerHandler} index={index}/>:
+                (answers[index] === "" ||  answers[index] == null ? <TrueOfFalseQuestion question={question} onAnswer={answerHandler} index={index}/>:
                 (answers[index] === questions[index].correct_answer? 
                     <div style={{backgroundColor:"green"}}>
                         <p>{decode(question.question)}</p>

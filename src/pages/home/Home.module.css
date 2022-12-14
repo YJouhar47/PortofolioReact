@@ -1,6 +1,25 @@
-.contentwrapper {
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.header {
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+}
+.progress{
     display: flex;
     flex-direction: column;
-    margin: 175px auto;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+}
+.img{
+}
+.bigtitle{
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+.bar {
+    width: 250px;
 }

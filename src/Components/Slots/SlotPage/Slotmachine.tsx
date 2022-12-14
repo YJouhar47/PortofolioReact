@@ -1,7 +1,6 @@
 import styles from "./Slotmachine.module.css";
 import { MouseEventHandler, useState } from "react";
-import Slot from "../../Components/Slots/Slot";
-import Layout from "../../Components/Layout/Layout";
+import Slot from "../Slot";
 
 const SlotMachine = ({aantalSlots}:{aantalSlots:number}) => {
     const [money, setMoney] = useState<number>(100);
@@ -12,7 +11,7 @@ const SlotMachine = ({aantalSlots}:{aantalSlots:number}) => {
         }
         return initSlots;
     });
-    let gewonnen: boolean = slots.every(v => v == slots[0]);
+    let gewonnen: boolean = slots.every(v => v === slots[0]);
     const handleBtnClick: MouseEventHandler<HTMLButtonElement> = () => {
         setSlots(() => {
             let initSlots: number[] = [];
@@ -28,19 +27,17 @@ const SlotMachine = ({aantalSlots}:{aantalSlots:number}) => {
         }
     }
     return (
-        <Layout>
         < >
             <h2>Slots :</h2>
             <div className={styles.slotMachine}>
                 <p className={styles.saldo}>Saldo: &euro;{money}</p>
                 <div className={styles.slots}>
-                    <button className={styles.btn} onClick={handleBtnClick} disabled={money == 0}>Pull Lever</button>
+                    <button className={styles.btn} onClick={handleBtnClick} disabled={money === 0}>Pull Lever</button>
                     {slots.map((i, index) => <Slot value={i} key={index} />)}
                 </div>
-                {money == 0 && <p className={styles.text}>Je bent bankroept!</p>}
+                {money === 0 && <p className={styles.text}>Je bent bankroept!</p>}
             </div>
         </>
-        </Layout>
     );
 }
 export default SlotMachine;

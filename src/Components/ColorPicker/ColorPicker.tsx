@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Layout from "../Layout/Layout";
-import Navbar from "../Navbar/Navbar";
 import styles from "./Colorpicker.module.css"
 
 
@@ -14,7 +12,6 @@ const ColorPicker = () =>
         SetColor(event.target.value);  
     }
     return (
-        <Layout>
         <div>
             <h3>Choose your color :</h3>
             <input type="color" id="color" onChange={handleChangeInput} value={color}></input>
@@ -29,7 +26,6 @@ const ColorPicker = () =>
                 <p>Kleur</p>
             </div>
         </div>
-        </Layout>
     );
     
 }

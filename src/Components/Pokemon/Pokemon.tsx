@@ -1,6 +1,4 @@
 import { ChangeEventHandler, MouseEventHandler, useEffect, useState } from "react";
-import Layout from "../Layout/Layout";
-import Navbar from "../Navbar/Navbar";
 import styles from "./Pokedex.module.css";
 
 export interface Pokemon {
@@ -29,17 +27,15 @@ const Pokedex = ({limit =151}:{limit?:number}) => {
         setLimiet(parseInt(input.value));
     }
   return (
-    <Layout>
     <>
     <input type="text" value={filterField} onChange={changeInputHandler}/> <br />
-    {(pokemons == null || pokemons == undefined || pokemons.length == 0) && <img className={styles.img} src="https://media.giphy.com/media/jAYUbVXgESSti/giphy.gif"/>}
+    {(pokemons === null || pokemons === undefined || pokemons.length === 0) && <img className={styles.img} alt='foto' src="https://media.giphy.com/media/jAYUbVXgESSti/giphy.gif"/>}
     <ul>
         {pokemons.filter(item => (new RegExp(`^.*${filterField}.*$`,"i")).test(item.name)).map((item) => <li key={item.name}>{item.name}</li>)}
     </ul>
     <input type="number" id="limit"/>
     <button onClick={btnClickHandler}>Set Limit</button>
     </>
-    </Layout>
   )
 }
 

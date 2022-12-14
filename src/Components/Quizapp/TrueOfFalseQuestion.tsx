@@ -1,4 +1,4 @@
-import { question } from "../../pages/QuizPage/QuizApp";
+import { question } from "./QuizPage/QuizApp";
 import {decode} from 'html-entities';
 
 interface TrueFalseQuestion

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Layout from '../../Components/Layout/Layout';
-import Navbar from '../../Components/Navbar/Navbar';
-import Question from '../../Components/Quizapp/Question';
+import Question from '../Question';
 export interface question
 {
   category:string,
@@ -41,12 +39,10 @@ const QuizApp = () =>
         setAnswers([...answers,...["","","","","","","","","",""]])
     }
     return (
-        <Layout>
         <div>
             <Question questions={questions} answers={answers} onAnswersChange={answersHandler}/>
             <button onClick={clickHandle}>Load more</button>
         </div>
-        </Layout>
     )
 }
 export default QuizApp;

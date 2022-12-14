@@ -1,5 +1,5 @@
 import {decode} from 'html-entities';
-import { question } from '../../pages/QuizPage/QuizApp';
+import { question } from './QuizPage/QuizApp';
 
 interface MultipleChoiceQuestion
 {
@@ -7,10 +7,9 @@ interface MultipleChoiceQuestion
     onAnswer:(answer:string,index:number) => void
     index:number
 }
-const MultipleChoiceQuestion = ({question,onAnswer,index}:MultipleChoiceQuestion) =>
+const multipleChoiceQuestion = ({question,onAnswer,index}:MultipleChoiceQuestion) =>
 {   
     let answers: string[] = [...question.incorrect_answers,question.correct_answer];
-    let test = ""
     answers = answers.sort(() => Math.random() - 0.5)
     return (
         <div key={index}>
@@ -24,4 +23,4 @@ const MultipleChoiceQuestion = ({question,onAnswer,index}:MultipleChoiceQuestion
     )
 }
 
-export default MultipleChoiceQuestion;
+export default multipleChoiceQuestion;
