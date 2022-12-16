@@ -1,25 +1,43 @@
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 .header {
-    border-right: 4px solid black;
-    border-bottom: 4px solid black;
+    margin: 0px auto;
+    margin-top: 7rem;
+    border:5px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 75%;
 }
-.progress{
-    display: flex;
-    flex-direction: column;
+.button {
+    font-size: large;
+    background-color: black;
+    color: white;
+}
+.button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.skills{
+    display: flex;  
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border-top: 4px solid black;
-    border-left: 4px solid black;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 80%;
+    border:5px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.img{
+.skillstext{
+
 }
-.bigtitle{
-    text-transform: uppercase;
-    font-size: xx-large;
+.introductiontext{
+    border: 1px solid black;
+    width: 10px;
 }
-.bar {
-    width: 250px;
+.skillsprogress{
+    width: 350px;    
+}
+.img {
+    margin-left: 25%;
+    margin-bottom: 4%;
 }
