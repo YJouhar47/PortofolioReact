@@ -1,16 +1,16 @@
 div.polaroid {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
-    width: 250px;
-    height: 175px;
+    width: 100%;
+    height: auto;
+    cursor:pointer;
   }
   
   div.container {
     text-align: center;
     padding: 10px 20px;
   }
-  img {
+  .cardsimage {
     border-radius: 8px;
-    max-width: 100%;
-    padding: 50px;
+    max-height: 150px;
   }

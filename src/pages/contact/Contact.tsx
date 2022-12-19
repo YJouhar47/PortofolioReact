@@ -56,7 +56,7 @@ const ContactUs = () => {
             <textarea name="message" value={text}  onChange={(event) => { setText(event.target.value) }} required/>
           </div>
           
-          <input type="submit" value="Send" />
+          <input type="submit" value="Send" style={{cursor:'pointer'}} />
         </form>
         
       </div>

@@ -12,6 +12,7 @@ const Cards = ({title,link,image,explanation}:ICards) => {
             <div className={styles.polaroid} onClick={()=> navigate(`/portofolio/${link}`)}>
             <div className={styles.container}>
             <p>{title}</p>
+            <img className={styles.cardsimage} src={image} alt={title}></img>
             <p>{explanation}</p>
             <button>Go to project</button>
             </div>

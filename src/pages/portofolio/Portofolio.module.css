@@ -1,8 +1,8 @@
 .cardswrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
     margin: 2rem;
-    gap:1rem;
 }

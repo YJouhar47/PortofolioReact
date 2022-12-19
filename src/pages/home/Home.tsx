@@ -23,8 +23,8 @@ const Aboutme = () => {
                     <ProgressBar customLabel="C++ (80%)" labelAlignment="center" completed={80} width='100%' bgColor="black" margin="5px" />
                     <ProgressBar customLabel="SQL (55%)" labelAlignment="center" completed={55} width='100%' bgColor="black" margin="5px" />
                 </div>
-                <div className={styles.img}>
-                    <img src="https://i.guim.co.uk/img/media/583b1b167c0b51719de576054d524326e577b21f/0_206_4488_2693/master/4488.jpg?width=1200&quality=85&auto=format&fit=max&s=634e0f9f6e23310f5e9432207b892432" alt="foto" />
+                <div>
+                    <img  className={styles.img} src="https://i.guim.co.uk/img/media/583b1b167c0b51719de576054d524326e577b21f/0_206_4488_2693/master/4488.jpg?width=1200&quality=85&auto=format&fit=max&s=634e0f9f6e23310f5e9432207b892432" alt="foto" />
                 </div>
             </div>
         </Layout>
