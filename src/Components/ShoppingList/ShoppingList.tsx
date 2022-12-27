@@ -1,5 +1,4 @@
 import { ChangeEventHandler, MouseEventHandler, useState } from "react";
-import Navbar from "../Navbar/Navbar";
 import styles  from "./ShoppingList.module.css"
 
 export interface Item {
@@ -31,7 +30,7 @@ const ListShopping = () => {
   }
 
   const handleRemove : MouseEventHandler<HTMLButtonElement> = (event) => {
-    setShoppingList([...shoppingList.filter((item,index)=> index.toString() != event.currentTarget.dataset.index)]);
+    setShoppingList([...shoppingList.filter((item,index)=> index.toString() !== event.currentTarget.dataset.index)]);
   }
     return (
       <div>

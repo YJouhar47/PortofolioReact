@@ -1,6 +1,5 @@
 import React, { FormEventHandler, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Navbar from '../../Components/Navbar/Navbar';
 import styles from './Contact.module.css'
 import Layout from '../../Components/Layout/Layout';
 const ContactUs = () => {
@@ -8,13 +7,6 @@ const ContactUs = () => {
   const[email,setEmail] = useState("");
   const[text, setText] = useState("");
   const[confirmationText, setConfirmationText] = useState('');
-
-
-  let msg : boolean = true;
-
-    if((fname !=="") && (email !=="") && (confirmationText !=="")){
-        msg = false;
-    }
 
   const sendEmail : FormEventHandler<HTMLFormElement>= (event) => {
 

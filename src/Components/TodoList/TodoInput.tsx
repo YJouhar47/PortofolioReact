@@ -7,11 +7,6 @@ interface TodoInputProps {
   const ToDoInput = ({addTodo}:TodoInputProps) => {
     const [todo, setTodo] = useState("");
   
-    const addButtonClick = () => {
-      setTodo("");
-      addTodo(todo);
-    }
-  
     return (
       <div>
           <input id="todo" type="text" value={todo} onChange={(event) => setTodo(event.target.value)} />

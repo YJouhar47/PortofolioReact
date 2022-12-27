@@ -1,5 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
-import Navbar from "../Navbar/Navbar";
 import styles from './Jokes.module.css';
 interface Joke {
     id:string,
@@ -26,6 +26,7 @@ const Jokes = () => {
     useEffect(()=> {
         localStorage.setItem("favoriteJoke",joke);
     },[favorite])
+    /*eslint no-unused-vars: ["warn",{"argsIgnorePattern": "^_","varsIgnorePattern": "^_"}]*/
     useEffect(()=>{
         loadJoke();
     },[]);
